@@ -2,23 +2,13 @@ import streamlit as st
 
 # Set page configuration (This should be the first Streamlit command in your script)
 st.set_page_config(
-    page_title="Youtube Data Harvesting and Warehousing",
+    page_title= "Youtube Data Harvesting and Warehousing",
     page_icon=":smiley:",
     layout="wide",  # You can set the layout to "wide" or "centered"
     initial_sidebar_state="auto"  # You can set it to "auto", "expanded", or "collapsed"
 )
+st.title(':red[Youtube Data Harvesting]')
 
-# Custom CSS to change the background color
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: black;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 from streamlit_extras.let_it_rain import rain
 rain(
     emoji="✨",
